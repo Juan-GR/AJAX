@@ -1,0 +1,20 @@
+<datos>
+    <empleados>
+        <nombre>José</nombre>
+        <apellidos>López González</apellidos>
+        <detalles>
+            <edad>35</edad>
+            <ecivil>casado</ecivil>
+            <tcoche>true</tcoche>
+        </detalles>
+    </empleados>
+    <empleados>
+        <nombre>Juan</nombre>
+        <apellidos>Caso Ruiz</apellidos>
+        <detalles>
+            <edad>27</edad>
+            <ecivil>soltero</ecivil>
+            <tcoche>false</tcoche>
+        </detalles>
+    </empleados>
+</datos>

@@ -1,0 +1,24 @@
+{
+    "datos": {
+        "empleados": [
+            {
+                "nombre": "José",
+                "apellidos": "López González",
+                "detalles": {
+                    "edad": 35,
+                    "ecivil": "casado",
+                    "tcoche": true
+                }
+            },
+            {
+                "nombre": "Juan",
+                "apellidos": "Caso Ruiz",
+                "detalles": {
+                    "edad": 27,
+                    "ecivil": "soltero",
+                    "tcoche": false
+                }
+            }
+        ]
+    }
+}

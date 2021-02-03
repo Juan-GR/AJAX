@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        #resultados {
+            background-color: grey;
+            border-color: rosybrown;
+            border-width: 2px;
+            width: 550px;
+            margin-bottom: 30px;
+            padding: 10px;
+            border-style: solid;
+        }
+
+        div {
+            background-color: slategray;
+            border-color: rosybrown;
+            border-width: 2px;
+            width: 550px;
+            margin-bottom: 30px;
+            padding: 10px;
+            border-style: solid;
+        }
+
+        .explicacion {
+            color: darkseagreen;
+            font-style: italic;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="explicacion">Pulsando el botón Mostrar nombres se debe de cargar el archivo nombres.txt suministrado en el
+        div id resultado</p>
+    <p class="explicacion">Pulsando el botón mostrar apellidos se debe de mostar el archivo apellidos.txt en el div id
+        resultado2</p>
+    <p class="explicacion">Pulsando el botón generar debe de generarse aleatoriamente combinaciones [nombre + apellido]
+        de 3 en 3 y cargarse en la lista id nombresapellidos</p>
+    <p>Pulsa en el botón para cargar generar nombres −</p>
+
+    <div id="resultado" style="background-color:#eee;">
+        Resultado
+    </div>
+    <div id="resultado2" style="background-color:#eee;">
+        Resultado2
+    </div>
+    <input type="button" id="cargarn" value="Mostrar" />
+    <input type="button" id="cargarap" value="Mostrar apellidos" />
+
+    <input type="button" id="generar" value="generar" />
+    <div id="resultados">
+        <ul id="nombresapellidos">
+        </ul>
+    </div>
+    <script src="ejercicio1.js"></script>
+</body>
+
+</html>

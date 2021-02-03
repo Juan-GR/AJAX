@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        #datos_coche {
+            background-color: azure;
+            border-color: rosybrown;
+            border-width: 2px;
+            width: 350px;
+            margin-bottom: 30px;
+            padding: 10px;
+            border-style: solid;
+        }
+        #contenedor{
+            background-color: azure;
+            border-color: rosybrown;
+            border-width: 2px;
+            width: 350px;
+            margin-bottom: 30px;
+            padding: 10px;
+            border-style: solid;
+        }
+
+        #buscados{
+            background-color: azure;
+            border-color: rosybrown;
+            border-width: 2px;
+            width: 350px;
+            margin-bottom: 30px;
+            padding: 10px;
+            border-style: solid;
+        }
+
+        #elformulario {
+            background-color: azure;
+            border-color: rosybrown;
+            border-width: 2px;
+            width: 350px;
+            margin-bottom: 30px;
+            padding: 10px;
+            border-style: solid;
+
+        }
+
+        span {
+            color: darkblue;
+            float: left;
+            width: 90px;
+        }
+
+        #lista_tipos {
+            background-color: antiquewhite;
+            border-color: rosybrown;
+            border-width: 2px;
+            width: 350px;
+            margin-bottom: 30px;
+            border-style: solid;
+
+        }
+
+        .explicacion {
+            color: darkseagreen;
+            font-style: italic;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Vehiculos</p>
+    <select id="vehiculos">
+
+    </select>
+    <!--
+       <select name="tipo_vehiculo" id="t_v">    
+           <option value="1" selected="selected">A</option>
+           <option value="2">B</option>
+           <option value="3">C</option>
+           <option value="4">D</option>
+       </select>
+    -->
+    <p class="explicacion">El menú anterior debe obtener los valores de la tabla tbl_clase.<br>Seleccionando un tipo de
+        vehículos se deben de enumerar en la lista inferior de id lista_tipos todos los vehículos de esa clase.</p>
+  
+    <p class="explicacion">Al pulsar sobre uno de ellos debe de mostrase en el div id datos_coches los datos del modelo
+    </p>
+
+    <div id="datos_coche">
+        <!--
+            Modelo: C3<br/>
+            Tipo: C<br/>
+            Antigüedad:  2 años<br/>
+            Precio: 4500 €<br/>
+        -->
+    </div>
+
+
+    <p class="explicacion">Con este formulario se debe de crear una entrada en la tabla vehículos.Mostrará un mensaje
+        confirmando la creación , o mostrando un mensaje de error en caso de problema.</p>
+    <form id="elformulario">
+        <span>Modelo:</span><input type="text" id="nuevocoche_modelo"><br />
+        <button id="registrarvehiculo" type="button">BUSCAR VEHICULO</button>
+    </form>
+    <div id="contenedor"></div>
+
+    <p class="explicacion">Se deben de mostrar en el div inferior todos los coches que estén entre los precios
+        introducidos en las casillas anteriores. Si no hay nada en algunos de los campos se supone el valor 0. Para esta
+        operación no existe ningún archivo php.</p>
+    <p>Buscar vehículos entre los siguientes precios</p>
+    <label for="vmin">Desde:</label><input type="text" id="vmin">
+    <label for="vmax">Hasta:</label><input type="text" id="vmax">
+    <button id="buscarentre" type="button">BUSCAR</button>
+    <div id="buscados">
+    </div>
+    <script src="archivo2.js"></script>
+</body>
+
+</html>
